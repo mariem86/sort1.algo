@@ -1,0 +1,16 @@
+PROCEDURE insert sort(VAR arr: ARRAY_OF INTEGER , n: INTEGER ;)
+VAR
+ i,j,k :INTEGER;
+BEGIN
+ n= arr.length
+ FOR i FROM 0 TO n   DO
+    k = arr[i]; 
+     j = i - 1; 
+  while (j >= 0 && arr[j] > k) DO
+     arr[j + 1] = arr[j]; 
+     j = j - 1; 
+END_WHILE
+  arr[j + 1] = k;
+ END_FOR
+ END
+ 
